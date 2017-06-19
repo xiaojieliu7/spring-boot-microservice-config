@@ -19,7 +19,7 @@ spring:
             rating:
               label: master
 server:
-  port: 8888
+  port: 8899
 endpoints:
   restart:
     enabled: true
@@ -51,7 +51,7 @@ spring:
             movie:
               label: master
 server:
-  port: 8888
+  port: 8899
 endpoints:
   restart:
     enabled: true
@@ -86,7 +86,7 @@ spring:
             rating:
               label: lattice
 server:
-  port: 8888
+  port: 8899
 endpoints:
   restart:
     enabled: true
@@ -96,7 +96,7 @@ endpoints:
     sensitive: false
 eureka:
   instance:
-    hostname: ${vcap.application.uris[0]:localhost:8888}
+    hostname: ${vcap.application.uris[0]:localhost:8899}
     nonSecurePort: 80
   client:
     registerWithEureka: true
